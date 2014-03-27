@@ -7,9 +7,10 @@
 //
 
 #import "RTViewController.h"
+#import "RTLongShadowView.h"
 
 @interface RTViewController ()
-
+@property (nonatomic, assign) IBOutlet RTLongShadowView *longShadow;
 @end
 
 @implementation RTViewController
@@ -24,6 +25,11 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)onSwitch:(UISwitch *)onoff
+{
+    self.longShadow.shadowOn = onoff.isOn;
 }
 
 @end

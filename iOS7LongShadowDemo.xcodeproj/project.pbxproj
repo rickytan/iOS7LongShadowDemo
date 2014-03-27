@@ -21,6 +21,7 @@
 		9C863CC818E4921300D5F5BC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C863CAA18E4921300D5F5BC /* UIKit.framework */; };
 		9C863CD018E4921300D5F5BC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C863CCE18E4921300D5F5BC /* InfoPlist.strings */; };
 		9C863CD218E4921300D5F5BC /* iOS7LongShadowDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C863CD118E4921300D5F5BC /* iOS7LongShadowDemoTests.m */; };
+		9C863CDE18E492C100D5F5BC /* RTLongShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C863CDD18E492C100D5F5BC /* RTLongShadowView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		9C863CCD18E4921300D5F5BC /* iOS7LongShadowDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOS7LongShadowDemoTests-Info.plist"; sourceTree = "<group>"; };
 		9C863CCF18E4921300D5F5BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9C863CD118E4921300D5F5BC /* iOS7LongShadowDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS7LongShadowDemoTests.m; sourceTree = "<group>"; };
+		9C863CDC18E492C100D5F5BC /* RTLongShadowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTLongShadowView.h; sourceTree = "<group>"; };
+		9C863CDD18E492C100D5F5BC /* RTLongShadowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTLongShadowView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,7 @@
 		9C863C9A18E4921300D5F5BC = {
 			isa = PBXGroup;
 			children = (
+				9C863CDB18E492AA00D5F5BC /* RTLongShadowView */,
 				9C863CAC18E4921300D5F5BC /* iOS7LongShadowDemo */,
 				9C863CCB18E4921300D5F5BC /* iOS7LongShadowDemoTests */,
 				9C863CA518E4921300D5F5BC /* Frameworks */,
@@ -150,6 +154,15 @@
 				9C863CCE18E4921300D5F5BC /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9C863CDB18E492AA00D5F5BC /* RTLongShadowView */ = {
+			isa = PBXGroup;
+			children = (
+				9C863CDC18E492C100D5F5BC /* RTLongShadowView.h */,
+				9C863CDD18E492C100D5F5BC /* RTLongShadowView.m */,
+			);
+			path = RTLongShadowView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C863CDE18E492C100D5F5BC /* RTLongShadowView.m in Sources */,
 				9C863CB718E4921300D5F5BC /* RTAppDelegate.m in Sources */,
 				9C863CBD18E4921300D5F5BC /* RTViewController.m in Sources */,
 				9C863CB318E4921300D5F5BC /* main.m in Sources */,
