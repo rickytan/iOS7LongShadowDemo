@@ -27,14 +27,17 @@
         if (_shadowOn) {
             CAReplicatorLayer *r = (CAReplicatorLayer *)self.layer;
             r.instanceCount = 50 * [UIScreen mainScreen].scale;
-            r.instanceColor = [UIColor colorWithWhite:0.4 alpha:0.2].CGColor;
-            r.preservesDepth = YES;
+            r.instanceColor = [UIColor colorWithWhite:0.0
+                                                alpha:0.05].CGColor;
             r.instanceTransform = CATransform3DMakeTranslation(1.0 / [UIScreen mainScreen].scale, 1.0 / [UIScreen mainScreen].scale, -1);
-            r.instanceAlphaOffset = -0.002;
+            r.instanceAlphaOffset = -0.05 / r.instanceCount;
+            r.instanceRedOffset = -0.02;
+            r.instanceBlueOffset = -0.02;
+            r.instanceGreenOffset = -0.02;
         }
         else {
             CAReplicatorLayer *r = (CAReplicatorLayer *)self.layer;
-            r.instanceCount = 0;
+            r.instanceCount = 1;
         }
     }
 }
@@ -59,7 +62,6 @@
 - (void)addSubview:(UIView *)view
 {
     [super addSubview:view];
-
     [self.interner addSubview:[NSKeyedUnarchiver unarchiveObjectWithData:[NSKeyedArchiver archivedDataWithRootObject:view]]];
 }
 

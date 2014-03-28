@@ -11,6 +11,7 @@
 
 @interface RTViewController ()
 @property (nonatomic, assign) IBOutlet RTLongShadowView *longShadow;
+@property (nonatomic, assign) IBOutlet UILabel *label;
 @end
 
 @implementation RTViewController
